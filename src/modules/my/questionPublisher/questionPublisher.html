@@ -1,0 +1,13 @@
+<template>
+    <section class="slds-col slds-size_1-of-1 slds-p-right_medium slds-p-left_medium">
+        <div class="slds-form slds-text-align_left">
+            <div class="slds-form-element slds-form-element_stacked">
+                <lightning-input required type="text" variant="standard" name="subject" label={subjectLabel} placeholder={subjectPlaceholder} message-when-value-missing="Subject is mandatory field"></lightning-input>
+            </div>
+            <div class="slds-form-element slds-form-element_stacked">
+                <lightning-textarea required variant="standard" name="description" label={descriptionLabel} placeholder={descriptionPlaceholder} maxlength="140" message-when-too-long="A maximum of 140 characters are allowed in a question." message-when-value-missing="An empty question cannot be posted."></lightning-textarea>
+            </div>
+            <lightning-button variant="brand" label="Submit Question" title="Submit Question" onclick={handleClick}></lightning-button>
+        </div>
+    </section>
+</template>

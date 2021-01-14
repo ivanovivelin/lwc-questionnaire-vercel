@@ -1,0 +1,20 @@
+<template>
+    <my-app-header></my-app-header>
+    <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+        </div>
+        <div class="slds-col">
+            <div class="slds-text-heading_large slds-p-around_large slds-text-align_center">Welcome to the SFI LWC Questionnaire</div>
+            <div class="slds-text-heading_small slds-p-around_x-small slds-text-align_center">Submit your question below and we will get back to you !</div>
+            <my-question-publisher 
+                subject-label="Subject" 
+                subject-placeholder="Enter the subject here ..." 
+                description-label="Description"
+                description-placeholder="Enter your question here ..."
+                lwc:dynamic={customCtor}
+            ></my-question-publisher>
+        </div>
+        <div class="slds-col">
+        </div>
+    </div>
+</template>
